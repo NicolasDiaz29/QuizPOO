@@ -4,7 +4,6 @@ public class Coordenada
 {
     private double x;
     private double y;
-    private double punto;
 
     public Coordenada (double x, double y)
     {
@@ -32,9 +31,12 @@ public class Coordenada
         this.y = y;
     }
 
-    //public double distancia(Punto a, Punto b)
+    public double distancia(Coordenada c1, Coordenada c2)
     {
-        double ct1 = a*x
+        double ct1 = c1.x-c2.x;
+        double ct2 = c1.y-c2.y;
+        double hip = Math.sqrt(ct1*ct1 + ct2*ct2);
+        return hip;
 
     }
 
